@@ -7,10 +7,13 @@
     "type": "git",
     "url": "git+https://github.com/tuxcrafting/jlisp.git"
   },
+  "bin": {
+    "jlisp": "lib/cli/jlisp.js"
+  },
   "scripts": {
-    "lint": "./node_modules/.bin/eslint src",
-    "build": "./node_modules/.bin/babel src -d lib -s",
-    "gendoc": "./node_modules/.bin/jsdoc -r src -d doc -c jsdoc.json",
+    "lint": "eslint src",
+    "build": "babel src -d lib -s",
+    "gendoc": "jsdoc -r src -d doc -c jsdoc.json",
     "run": "sh ./bin/jlisp",
     "clean": "rm -r lib/*",
     "cleandoc": "rm -r langref/bin/*"
