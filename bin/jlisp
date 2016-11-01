@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+a=`realpath $0`
+b=`dirname $a`
+c=`dirname $b`
+
+node $c/lib/cli/jlisp.js $@

@@ -1,0 +1,7 @@
+(set 'f (lambda '('x 'y) {(* x y)}))
+(f 2 4)
+(+ (f 2 4) (f 2 4))
+(set 'g (lambda '('x 'y 'z) {(+ x (* y z) (- x z))}))
+(g 7 5 3)
+(sum (map (range 1 11) (lambda '('x) {(* x 3)})))
+(apply + (range 1 11))

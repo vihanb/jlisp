@@ -1,0 +1,5 @@
+lib/*
+doc/*
+node_modules/*
+langref/bin/*
+langref/Gemfile.lock

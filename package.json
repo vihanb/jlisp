@@ -1,0 +1,35 @@
+{
+  "name": "jlisp",
+  "version": "0.0.1",
+  "description": "Lisp dialect",
+  "main": "bin/jlisp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuxcrafting/jlisp.git"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint src",
+    "build": "./node_modules/.bin/babel src -d lib -s",
+    "gendoc": "./node_modules/.bin/jsdoc -r src -d doc -c jsdoc.json",
+    "run": "sh ./bin/jlisp",
+    "clean": "rm -r lib/*",
+    "cleandoc": "rm -r langref/bin/*"
+  },
+  "author": "tuxcrafting",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "eslint": "^3.9.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "jsdoc": "^3.4.2",
+    "marked": "^0.3.6"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "prompt-sync": "^4.1.4",
+    "prompt-sync-history": "^1.0.1"
+  }
+}

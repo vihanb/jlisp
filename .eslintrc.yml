@@ -1,0 +1,16 @@
+extends: standard
+plugins:
+  - standard
+  - promise
+parserOptions:
+    ecmaVersion: 6
+env:
+    node: true
+rules:
+    indent: ["error", 4]
+    quotes: ["error", "double"]
+    semi: ["error", "always"]
+    no-console: "off"
+    valid-jsdoc: "error"
+    comma-dangle: ["error", "always-multiline"]
+    space-before-function-paren: "off"
